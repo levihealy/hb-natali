@@ -1,0 +1,156 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+.container {
+    max-width: 600px; 
+    margin: auto;
+    padding: 10px;
+}
+
+#ver-container {
+    color: white;
+    padding: 7px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top: 10;
+    color: aliceblue;
+    font-size: 22px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 200;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+}
+
+.text-above-images {
+    margin-bottom: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 30px;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 5px;
+    border-radius: 10px;
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+    box-sizing: border-box;
+}
+
+.image:hover {
+    transform: scale(0.9);
+    filter: brightness(70%);
+}
+
+#result {
+    margin: 30px;
+    color: rgb(255, 208, 0);
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#checkButton {
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+#checkButton:hover {
+    background-color: #1a6ba1;
+}
+
+
+@media (max-width: 800px) {
+    .image-container {
+        padding: 10px;
+        margin: 20px 20px;
+        width: 75vw;
+        max-width: none;
+        height: auto;
+        max-height: none;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-above-images {
+        font-size: 13px;
+    }
+
+    .text-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 13px;
+        margin-bottom: 100px;
+    }
+
+    #result {
+        margin: 20px;
+        color: rgb(255, 192, 34);
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.image.selected {
+    border: 3px solid #3498db;
+}
+
+.text-container {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    margin: 7px;
+}
+
